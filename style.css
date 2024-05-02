@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.top {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+}
+
+.logo img {
+    width: auto;
+    height: 100px;
+}
+
+.slogo {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+}
+
+.slogo img {
+    width: auto;
+    height: 100px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/1.jpg) repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navi {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    top: 30px;
+    border-radius: 40px;
+}
+
+
+
+.navi ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navi ul li {
+    display: inline;
+}
+
+.navi ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+.navi ul li a:hover {
+    background-color: #555;
+    border-radius: 40px;
+}
+
+.navi ul li.active a {
+    background-color: #555;
+    border-radius: 40px;
+}
+
+.wrapper {
+    margin-top: 100px;
+    width: 420px;
+    color: #333;
+    background: transparent;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(10px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(53, 44, 44);
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box ::placeholder {
+    color: rgb(53, 44, 44);
+    padding-left: 10px;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #333;
+    text-decoration: none;
+}
+
+.remember-forgot :hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(61, 61, 61, 0.838);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #555;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.container {
+    border-radius: 5px;
+    position: absolute;
+    top: 220px;
+    padding: 20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.content {
+    padding: 10px;
+}
+
+.report-container {
+    padding-top: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.report-box {
+    width: 300%;
+    min-width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.report-box h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.report-box p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin-top: 65px;
+    }
+
+    .logo img,
+    .slogo img {
+        width: 39px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .navi ul li a {
+        padding: 8px 16px;
+    }
+
+    input[type="number"],
+    textarea,
+    button {
+        font-size: 14px;
+    }
+
+    .report-box {
+        width: 130%;
+        padding: 15px;
+    }
+
+    .report-box h3 {
+        font-size: 18px;
+    }
+
+    .report-box p {
+        font-size: 14px;
+    }
+
+    .report-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 210px;
+    }
+}
